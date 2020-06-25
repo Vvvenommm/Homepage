@@ -200,7 +200,7 @@ footer p {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
-    transition: border 0.4s, color 0.4s;
+    transition: border 0.4s, color 0.4s, background-color 0.4s;
 }
 
 .btn-full {
@@ -213,6 +213,24 @@ footer p {
 .btn-full:active {
     border: 3px solid #185abe;
     color: #185abe;
+}
+
+.btn-ghost {
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #000;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    background-color: #000;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #fff;
+    color: #185abe;
+    border: 3px solid #185abe;
 }
 
 .btn-app img {
