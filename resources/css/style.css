@@ -435,6 +435,11 @@ h2:after {
     display: inline;
 }
 
+.project-java {
+    width: 80%;
+    margin-left: 10%;
+}
+
 h3 {
     text-align: center;
 }
