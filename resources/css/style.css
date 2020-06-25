@@ -166,6 +166,17 @@ footer p {
     text-decoration: none;
     color: #000;
     margin-left: 15px;
+    transition: border-bottom 0.4s;
+}
+
+.footer-nav-left li a:link,
+.footer-nav-left li a:visited {
+    border-bottom: 2px solid transparent;
+}
+
+.footer-nav-left li a:hover,
+.footer-nav-left li a:active {
+    border-bottom: 2px solid #185abe;
 }
 
 .footer-nav-right {
@@ -192,6 +203,9 @@ footer p {
     color: #026466;
 }
 
+.github:hover {
+    color: #333;
+}
 
 /* ---------- BUTTONS ---------- */
 
@@ -228,7 +242,7 @@ footer p {
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    background-color: #fff;
+    background-color: #f4f4f4;
     color: #185abe;
     border: 3px solid #185abe;
 }
@@ -290,22 +304,33 @@ h2:after {
 
 /* ---------- Portfolio ---------- */
 
-.portfolio-box {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* ---------- Fitness - Gym-Workout-Planner ---------- */
-
 .box-inner-image {
     width: 350px;
     height: auto;
+    overflow: hidden;
+    opacity: 0.85;
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 .box-inner-image-homepage {
     width: 450px;
     height: auto;
     margin-top: 20px;
+}
+
+.box-inner-image-simple-project {
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    background-color: #cececea8;
+    margin-top: 30px;
+    opacity: 0.7;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.project-images:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
 
 .box-project {
@@ -339,6 +364,20 @@ h2:after {
 }
 
 .box-inner-text p {
+    line-height: 145%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.box-inner-text-the-simple-project {
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.box-inner-text-the-simple-project p {
+    font-size: 95%;
     line-height: 145%;
     width: 90%;
     margin-left: 5%;
