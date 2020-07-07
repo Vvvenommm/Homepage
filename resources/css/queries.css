@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .row-max {
         max-width: 700px;
     }
@@ -13,25 +13,24 @@
         display: block;
         float: right;
         cursor: pointer;
-        margin-top: -8px;
+        margin-top: -5px;
     }
 
     .contact:link,
     .contact:visited {margin-top: 60px;}
 
-    .main-nav, .contact {
+    .main-nav {display: none;}
+
+    .main-nav li, .contact {
+        margin-top: 60px;
+        display: block;
+        padding: 30px;
+        list-style: none;
         display: flex;
         text-align: center;
         flex-direction: column;
         z-index: 9999;
         width: 100%;
-    }
-    
-    .main-nav li {
-        margin-top: 60px;
-        display: block;
-        padding: 30px;
-        list-style: none;
     }
     
     .main-nav li a:link,
@@ -52,8 +51,6 @@
         border-bottom: 2px solid #185abe;
     }
 
-    .sticky .main-nav li {display: block;}
-
     .sticky .main-nav li a:link .contact:link,
     .sticky .main-nav li a:visited .contact:active {padding: 10px 0;}
 
@@ -68,9 +65,44 @@
     .welcome-box p {
         font-size: 85%;
     }
+
+    .footer-nav-left {
+        font-size: 90%;
+    }
+
+    .footer-nav-right {
+        float: initial;
+        text-align: center;
+        font-size: 150%;
+        padding: 15px;
+    }
+
+    .long-copy {
+        font-size: 80%;
+    }
+
+    h3 {
+        font-size: 90%;
+    }
+
+    .box-inner-left {
+        width: 100%;
+    }
+
+    .box-inner-right {
+        width: 100%;
+    }
+
+    .box-bottom h4 {
+        margin-left: 20px;
+    }
+    
+    .used-technologies {
+        margin: 25px 20px;
+    }
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 769px) {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
     .row-max {
         max-width: 750px;
     }
