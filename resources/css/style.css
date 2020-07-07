@@ -130,25 +130,21 @@ nav {
 
 /* ---------- Mobile Nav ---------- */
 
-.mobile-nav {
-    display: none;
-}
-
 .burger {
     display: none;
 }
 
-.burger ion-icon {
-    font-size: 200%;
+.burger i {
+    font-size: 150%;
     color: #000;
 }
 
-.burger div {
+/* .burger div {
     width: 25px;
     height: 3px;
     background-color: #000;
     margin: 5px;
-}
+} */
 
 .welcome-box p {
     margin-bottom: 30px;
@@ -471,9 +467,12 @@ h2:after {
     display: inline;
 }
 
-.project-java {
-    width: 80%;
-    margin-left: 10%;
+.project-java p {
+    font-size: 95%;
+    line-height: 145%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 h3 {

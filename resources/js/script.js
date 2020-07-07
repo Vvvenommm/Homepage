@@ -56,20 +56,21 @@ $(document).ready(function() {
         });
 
 
-    // Mobile nav
+    /* Mobile navigation */
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
-        var icon = $('js--nav-icon i');
+        var icon = $('.js--nav-icon i');
+        
         nav.slideToggle(200);
-        if (icon.hasClass('menu')) {
-            icon.addClass('close-outline');
-            icon.removeClass('menu');
+        
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
         } else {
-            icon.addClass('menu');
-            icon.removeClass('close-outline');
-        }
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }        
     });
-    // <ion-icon name="close-outline"></ion-icon>
 });
 
     /* Animations on scroll */
