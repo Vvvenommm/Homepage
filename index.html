@@ -5,35 +5,36 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" text="text/css" href="resources/css/queries.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
         <title>Mustafa Nail Bülbül</title>
     </head>
 
-    <body class="row">
+    <body id="start">
         <header>
             <nav>
-                <div class="row-max">
-                    <a href="#" class="name">Mustafa Nail Bülbül</a>
-                    <ul class="main-nav">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                    </ul>
-                    <a href="#" class="contact">Contact</a>
-                </div>
+                <a href="#" class="burger js--nav-icon"><ion-icon name="menu-outline" class="menu"></ion-icon></a>
+                <a href="#start" class="name">Mustafa</a>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+                <a href="#contact" class="contact js--main-nav"><span>Contact</span></a>
             </nav>
             <div class="welcome-box">
                 <h1>Mustafa Nail Bülbül</h1>
-                <p>iOS-Developer | Frontend-Developer | Java-Developer</p>
-                <a href="#" class="btn btn-full">About Me</a>
+                <p class="js--wp-1">iOS-Developer | Frontend-Developer | Java-Developer</p>
+                <a href="#" class="btn btn-full js--scroll-to-about-me">About Me</a>
             </div>
         </header>
         
-        <section class="section-about-me clearfix">
+        <section class="section-about-me js--section-about-me clearfix" id="aboutme">
             <div class="row-max">
                 <h2>About Me</h2>
-                <p class="long-copy">Mustafa Nail Bülbül was born in Esslingen. In his childhood before he could even read or write, he
+                <p class="long-copy js--wp-2">Mustafa Nail Bülbül was born in Esslingen. In his childhood before he could even read or write, he
                     devoted his interest to building and creating different things. When his father bought a computer,
                     he started dealing with it. At high school, he attended the natural science subjects, where he
                     discovered his interest in programming. Because of that he began to teach himself programming with
@@ -58,12 +59,12 @@
             </div>
         </section>
 
-        <section class="section-portfolio clearfix">
+        <section class="section-portfolio clearfix" id="portfolio">
             <div class="row-max">
                 <h2>Portfolio</h2>
             </div>
             <div class="row-max">
-                <div class="box-project">
+                <div class="box-project js--wp-3">
                     <h3>Fitness - Gym-Workout-Planer</h3>
                     <div class="box-inner-left">
                         <img src="resources/images/pic5.png" alt="Workout" class="box-inner-image project-images">
@@ -115,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box-project">
+                <div class="box-project js--wp-4">
                     <h3>Homepage</h3>
                     <div class="box-bottom">                        
                         <h4>Technologies</h4>
@@ -140,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box-project">
+                <div class="box-project js--wp-3">
                     <h3>The Simple Project</h3>
                     <div class="box-inner-left">
                         <img src="resources/images/Logo.svg" alt="Workout" class="box-inner-image-simple-project project-images">
@@ -205,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box-project">
+                <div class="box-project js--wp-4">
                     <h3>Java Projects</h3>
                     <div class="project-java">
                         <p>
@@ -239,7 +240,7 @@
             </div>
         </section>
 
-        <section class="section-resume clearfix">
+        <section class="section-resume clearfix" id="resume">
             <div class="row-max">
                 <h2>Resume</h2>
             </div>
@@ -248,7 +249,7 @@
             </div>
         </section>
 
-        <section class="section-contact-me clearfix">
+        <section class="section-contact-me clearfix" id="contact">
             <div class="row-max">
                 <h2>Contact</h2>
             </div>
@@ -261,10 +262,10 @@
             <div class="row-max">
                 <div class="col span-1-of-2">
                     <ul class="footer-nav-left">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
@@ -281,6 +282,8 @@
         </footer>
 
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
     </body>
 
