@@ -243,6 +243,8 @@ footer p {
 
 .btn:link,
 .btn:visited {
+    text-align: center;
+    width: 200px;
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -478,6 +480,48 @@ h2:after {
 h3 {
     text-align: center;
 }
+
+.email-container {
+    text-align: center;
+}
+
+/* ---------- Resume ---------- */
+.work-stations {
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.box-inner-left-resume {
+    float: left;
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+
+.box-inner-left-resume img {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+}
+
+.box-inner-right-resume {
+    float: right;
+    width: 60%;
+}
+
+.box-inner-right-resume h3 {
+    text-align: left;
+}
+
+.box-inner-right-resume p {
+    font-size: 85%;
+    line-height: 1.5;
+}
+
+/* ---------- Contact ---------- */
 
 /* ---------- Animations ---------- */
 

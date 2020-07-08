@@ -57,12 +57,11 @@ $(document).ready(function() {
 
 
     /* Mobile navigation */
+    // open/close mobile-nav when icon clicked
     $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
-        
-        nav.slideToggle(200);
-        
+        $(nav).animate({width: 'toggle'})
         if (icon.hasClass('ion-navicon-round')) {
             icon.addClass('ion-close-round');
             icon.removeClass('ion-navicon-round');
@@ -71,6 +70,24 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
         }        
     });
+
+    //close when item in main-nav gets clicked
+    if ($(window).width() < 786 ) {
+        $('.js--main-nav li a').click(function(){
+            var nav = $('.js--main-nav');
+            var icon = $('.js--nav-icon i');
+    
+            $(nav).animate({width: 'toggle'})
+    
+            if (icon.hasClass('ion-navicon-round')) {
+                icon.addClass('ion-close-round');
+                icon.removeClass('ion-navicon-round');
+            } else {
+                icon.addClass('ion-navicon-round');
+                icon.removeClass('ion-close-round');
+            }
+          })
+    }
 });
 
     /* Animations on scroll */

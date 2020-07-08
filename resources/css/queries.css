@@ -7,8 +7,12 @@
         display: block;
         background-color: rgba(255, 255, 255, 0.98);
         z-index: 9999;
-        /* height: 100vh; */
     }
+
+    .welcome-box p {
+        text-align: left;
+    }
+
     .burger {
         display: block;
         float: right;
@@ -99,6 +103,21 @@
     
     .used-technologies {
         margin: 25px 20px;
+    }
+
+    .box-inner-button ul li {
+        margin: 10px 0;
+    }
+
+    .box-inner-left-resume {
+        width: 100%;
+    }
+    .box-inner-right-resume {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .box-inner-right-resume h3, p {
+        text-align: center
     }
 }
 
